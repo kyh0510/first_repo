@@ -1,0 +1,31 @@
+[
+    {
+        "id": 0,
+        "date": "2017-09-03T08:00:00.00Z",
+        "time": "05:30PM",
+        "noOfParty": 2,
+        "lastName": "Ronaldo",
+        "phone": "213-301-3389",
+        "email": "ocean.row.your@boat.com"
+    },
+
+    {
+        "id": 1,
+        "date": "2017-09-19T08:00:00.00Z",
+        "time": "07:00PM",
+        "noOfParty": 5,
+        "lastName": "Yiang",
+        "phone": "904-501-2114",
+        "email": "iheart@coding"
+    },
+
+    {
+        "id": 2,
+        "date": "2017-12-25T08:00:00.00Z",
+        "time": "08:35PM",
+        "noOfParty": 2,
+        "lastName": "Beckham",
+        "phone": "213-402-9058",
+        "email": "coding.is@complicated"
+    }
+]

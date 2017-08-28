@@ -1,0 +1,26 @@
+<div class="sushi container">
+  
+    <div class="plate left">
+        <p class="fresh"><img src="https://tbncdn.freelogodesign.org/44c13a97-08b3-4722-8271-575df4dfc55a.png?1503619000941" /></p>
+        <img class="raw" src="img/rawplate.png" />
+    </div>
+    <div class="chef">
+    </div>
+    <div class="plate right">
+        <p class="exquisite"><img src="https://tbncdn.freelogodesign.org/aa147d23-ef81-4371-9557-b3e3f77b70f2.png?1503619440364" /></p>
+        <img src="img/rollplate.png" />
+    </div>
+    <div class="conveyor">
+    </div>
+
+
+</div>
+
+<div id="slides_control">
+    <carousel interval="myInterval">
+        <slide ng-repeat="slide in slides" active="slide.active">
+            <img ng-src="{{ slide.image }}">
+
+        </slide>
+    </carousel>
+    <div>

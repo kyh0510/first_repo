@@ -1,0 +1,18 @@
+<div class="container">
+  
+    <h1 class="hero">{{ reservation.lstName }}</h1>
+    
+    <div class="contentContainer">
+        <h2>Reservation Info</h2>
+        <p><strong> Date: </strong>{{ reservation.date | date }}</p>
+        <p><strong> Time: </strong>{{ reservation.time }}</p>
+        <p><strong> No. of Party: </strong>{{ reservation.noOfParty }}</p>
+        <p><strong> Last Name: </strong>{{ reservation.lastName }}</p>
+        <p><strong> Phone: </strong>{{ reservation.phone }}</p>
+        <p><strong> Email: </strong>{{ reservation.email }}</p>
+
+        <a ui-sref="editReservation({id: {{ reservation.id }} })"><button class="btn btn-info">Update Info</button></a>
+        <button ng-click="deleteTable()" class="btn btn-danger">Cancel</button>
+    </div>
+    
+</div>

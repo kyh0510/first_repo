@@ -1,0 +1,50 @@
+<div class="container">
+  <h1 class="text-center">Menu</h1>
+  <div class="row">
+    <h2>Appetizer</h2>
+    <div class="appetizer row col-md-4 text-center" ng-repeat="a in appetizers">
+      <h3> {{ a.name }} </h3>
+      <p> {{ a.description }} </p>
+      <p> {{ a.price }} </p>
+      <img class="resize img-responsive center-block img-rounded" src="{{ a.image }}" />
+    </div>
+  </div>
+
+  <div class="row">
+    <h2>Salad</h2>
+    <div class="salad row col-md-4 text-center" ng-repeat="s in salads">
+      <h3> {{ s.name }} </h3>
+      <p> {{ s.description }} </p>
+      <p> {{ s.price }} </p>
+      <img class="resize img-responsive center-block img-rounded" src="{{ s.image }}" />
+    </div>
+  </div>
+
+  <div class="row">
+    <h2>Main</h2>
+    <div class="main row col-md-3 text-center" ng-repeat="m in mains">
+      <h3> {{ m.name }} </h3>
+      <p> {{ m.description }} </p>
+      <p> {{ m.price }} </p>
+      <img class="resize img-responsive center-block img-rounded" src="{{ m.image }}" />
+    </div>
+  </div>
+
+  <div class="row">
+    <h2>Dessert</h2>
+    <div class="dessert row col-md-6 text-center" ng-repeat="d in desserts">
+      <h3> {{ d.name }} </h3>
+      <p> {{ d.description }} </p>
+      <p> {{ d.price }} </p>
+      <img class="resize img-responsive center-block img-rounded" src="{{ d.image }}" />
+    </div>
+  </div>
+
+  <div class="row">
+    <h2>Drink List</h2>
+    <div class="drink col-md-6" ng-repeat="dr in drinks">
+      <img src="{{ dr.image }}" />
+    </div>
+  </div>
+</div>
+</div>

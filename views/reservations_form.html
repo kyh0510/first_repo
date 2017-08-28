@@ -1,0 +1,53 @@
+<div class="container">
+
+    <h1 class="hero">{{ formHeader }}</h1>
+
+    <div class="row">
+        <h3 class="sectionHeader">Reservation Information</h3>
+
+        <div class="form-group col-md-4">
+            <label>Date</label>
+            <input type="date" class="form-control" ng-model="reservation.date">
+        </div>
+
+        <div class="form-group col-md-4">
+            <label>Time</label>
+            <input type="time" class="form-control" ng-model="reservation.time">
+        </div>
+
+        <div class="form-group col-md-4">
+            <label>No. of Party</label></br>
+            <select name="party" class="form-control" ng-model="reservation.noOfParty">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+
+        <div class="form-group col-md-4">
+            <label>Last Name</label>
+            <input type="text" class="form-control" placeholder="Last Name" ng-model="reservation.lastName">
+        </div>
+
+        <div class="form-group col-md-4">
+            <label>Phone</label>
+            <input type="text" class="form-control" placeholder="(555)-555-5555" ng-model="reservation.phone">
+        </div>
+
+        <div class="form-group col-md-4">
+            <label>Email</label>
+            <input type="text" class="form-control" placeholder="johndoe@gmail.com" ng-model="reservation.email">
+        </div>
+
+        <button ng-show="submitButton" ng-click="addTable()" class="btn btn-primary btn-lg pull-right cbtn">Book a Table</button>
+        <button ng-show="updateButton" ng-click="updateTable()" class="btn btn-success btn-lg pull-right cbtn">Update Info</button>
+    </div>
+
+</div>
